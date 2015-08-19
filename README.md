@@ -4,7 +4,7 @@ A simple content plugin that processes tables preceded by `{footables}` and turn
 
 ##Basic Usage Steps
   1. Install via the standard Joomla extension manager and enable it.
-  2. Place an open tag `{footables}` immediately before the table in your article.
+  2. Place a tag `{footables}` immediately before the table in your article.
   3. Add a the `footable` class to each table in the article you want Footable to work on. 
   4. Configure each column of your Footable by adding `data-hide` attributes to determine when they are shown or hidden.
   
