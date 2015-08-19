@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+        <name>PLG_CONTENT_EASYFOOTABLES</name>
+        <author>Craig Phillips</author>
+        <creationDate>July 2015</creationDate>
+        <copyright>Copyright © 2015 Craig Phillips Pty Ltd. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later; see LICENSE</license>
+        <authorEmail>support@craigphillips.biz</authorEmail>
+        <authorUrl>craigphillips.biz</authorUrl>
+        <version>1.0.0</version>
+        <description>EasyFootables Plugin — A simple plugin to add the JQuery plugin &lt;a href='http://fooplugins.com/footable-demos/' target='_blank'>'FooTables'&lt;/a> script to any HTML table elements that have the class &lt;code>footable&lt;/code> attached to them.</description>
+        <files>
+                <filename plugin="easyfootables">easyfootables.php</filename>
+                <folder>language</folder>
+        </files>
+        <media folder="media" destination="plg_content_easyfootables">
+                <folder>js</folder>
+                <folder>css</folder>
+        </media>
+        <config>
+                <fields name="params">
+ 
+                        <fieldset name="basic">
+                                <field name="load_css" type="radio"
+                                        default="0"
+                                        class="btn-group btn-group-yesno"
+                                        description="PLG_CONTENT_EASYFOOTABLES_LOAD_CSS_DESC"
+                                        label="PLG_CONTENT_EASYFOOTABLES_LOAD_CSS_LABEL"
+                                >
+                                        <option value="0">JNO</option>
+                                        <option value="1">JYES</option>
+                                </field>
+                                <field name="custom_css_path" type="text"
+                                        description="PLG_CONTENT_EASYFOOTABLES_CUSTOM_CSS_PATH_DESC"
+                                        label="PLG_CONTENT_EASYFOOTABLES_CUSTOM_CSS_PATH_LABEL"
+                                />
+                                <field name="load_jquery" type="radio"
+                                        default="Y"
+                                        class="btn-group btn-group-yesno"
+                                        description="PLG_CONTENT_EASYFOOTABLES_JQUERY_DESC"
+                                        label="PLG_CONTENT_EASYFOOTABLES_JQUERY_LABEL"
+                                >
+                                        <option value="0">JNO</option>
+                                        <option value="1">JYES</option>
+                                </field>
+                        </fieldset>
+ 
+                </fields>
+        </config>
+</extension>
